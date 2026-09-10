@@ -1,61 +1,37 @@
 # 📄 PDF AI Chatbot
 
-An AI-powered PDF question-answering chatbot built using
-Retrieval-Augmented Generation (RAG), Gemini, LangChain,
-and FAISS.
+An AI-powered PDF question-answering application using
+Retrieval-Augmented Generation (RAG).
 
-## 🚀 Features
+## Features
 
 - Upload PDF documents
-- Extract text from PDFs
-- Intelligent text chunking
+- Extract PDF text
+- Text chunking
 - Gemini embeddings
 - FAISS vector database
 - Semantic document retrieval
-- Gemini-powered question answering
+- Gemini-powered answers
 - Bring Your Own API Key (BYOK)
-- Public web deployment using Streamlit
+- Public Streamlit deployment
 
-## 🧠 Architecture
-
-PDF
-↓
-Text Extraction
-↓
-Text Chunking
-↓
-Gemini Embeddings
-↓
-FAISS Vector Database
-↓
-User Question
-↓
-Relevant Context Retrieval
-↓
-Gemini LLM
-↓
-Answer
-
-## 🛠️ Technologies
+## Technologies
 
 - Python
 - Streamlit
 - LangChain
-- Google Gemini
+- Gemini
 - FAISS
 - pdfplumber
 
-## 🔑 Bring Your Own API Key
+## Architecture
 
-Users provide their own Gemini API key through the
-application interface.
+PDF → Text Extraction → Chunking → Gemini Embeddings
+→ FAISS → Retrieval → Gemini → Answer
 
-The application does not intentionally persist user
-API keys.
+## Privacy
 
-## ▶️ Run Locally
+Users provide their own Gemini API key for using the
+application. The application does not intentionally
+persist user API keys. 
 
-Install the required packages:
-
-```bash
-pip install -r requirements.txt
