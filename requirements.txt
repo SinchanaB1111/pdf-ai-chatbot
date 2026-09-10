@@ -1,0 +1,7 @@
+streamlit
+pdfplumber
+langchain
+langchain-text-splitters
+langchain-google-genai
+langchain-community
+faiss-cpu
